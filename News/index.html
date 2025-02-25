@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsweb</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./logo.png" width="120px" />
+      <div class="inputSearch desktop">
+        <form id="searchForm">
+          <input type="text" placeholder="Type to search..." id="searchInput" />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>
+      </div>
+      <nav class="desktop">
+        <ul>
+          <li onclick="Search('sports')">Sports</li>
+          <li onclick="Search('indian history')">Indian History</li>
+          <li onclick="Search('world history')">World History</li>
+          <li onclick="Search('current affairs')">Current Affairs</li>
+          <li onclick="Search('emerging technologies')">Emerging Technologies</li>
+          <li onclick="Search('upsc')">UPSC</li>
+          <li onclick="Search('entertainment')">ENTERTAINMENT</li>
+          <li onclick="Search('natural science')">NATURAL SCIENCE</li>
+          <li onclick="Search('crime stories')">CRIME STORIES</li>
+          <li onclick="Search('fairy tales')">FAIRY TALES</li>
+          <a href="news.html">Breaking News</a>
+        </ul>
+      </nav>
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li onclick="Search('sports')">Sports</li>
+            <li onclick="Search('indian history')">Indian History</li>
+            <li onclick="Search('world history')">World History</li>
+            <li onclick="Search('current affairs')">Current Affairs</li>
+            <li onclick="Search('emerging technologies')">Emerging Technologies</li>
+            <li onclick="Search('upsc')">UPSC</li>
+            <li onclick="Search('entertainment')">ENTERTAINMENT</li>
+            <li onclick="Search('natural science')">NATURAL SCIENCE</li>
+            <li onclick="Search('crime stories')">CRIME STORIES</li>
+            <li onclick="Search('fairy tales')">FAIRY TALES</li>
+          </ul>
+        </nav>
+        <div class="inputSearch">
+          <form id="searchFormMobile">
+            <input type="text" placeholder="Type to search..." id="searchInputMobile" />
+            <span> <i class="fa-solid fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+      <div class="notepad-icon" onclick="openNotepad()">
+        <i class="fa-solid fa-note-sticky"></i>
+        <span>Notepad</span>
+      </div>
+
+      <div class="weather-container">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <span id="weather">Loading...</span>
+      </div>
+
+      <div class="quiz-icon" onclick="openQuizPage()">
+        <i class="fa-solid fa-question-circle"></i>
+      </div>
+    </header>
+
+    <main>
+      <h1>Welcome to NewsSphere</h1>
+        
+        <button onclick="window.location.href='news.html'">View News Headlines</button>
+      
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Affairs Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Current Affairs Quiz</h2>
+        <p id="question"></p>
+        <div id="options"></div>
+        <p id="timer">Time left: 10s</p>
+         <!-- Navigation Buttons -->
+         <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+         <button id="next-btn" onclick="nextQuestion()">Next</button>
+         <button id="submit-btn" onclick="endQuiz()" style="display:none;">Submit</button>
+       
+       
+     <p id="score-display">Score: 0</p>
+    </div>
+    </div>
+
+    <div id="scorecard" style="display: none;">
+        <h2>Scorecard</h2>
+        <p id="final-score"></p>
+        <h3>Review Answers</h3>
+        <ul id="review-answers"></ul>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <button onclick="startNewQuiz()">Start New Quiz</button>
+        <button onclick="returnToHome()" class="home-btn">Return to Home</button>
+
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+

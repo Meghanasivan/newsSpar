@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="notepad.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!-- jsPDF Library -->
+</head>
+<body onload="loadNotepad()">
+    <div class="notepad-container">
+        <h2>Notepad - <span id="date"></span></h2>
+        <textarea id="note" placeholder="Write your notes here..."></textarea>
+        <br>
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="clearNote()">Clear Note</button>
+        <button onclick="exportNote()">Export as .txt</button>
+        <button onclick="exportPDF()">Export as .pdf</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <br>
+        <a href="index.html">Back to Home</a> <!-- Change as needed -->
+    </div>
+
+    <script src="notepad.js"></script>
+</body>
+</html>

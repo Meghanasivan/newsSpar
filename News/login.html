@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application - Sign Up & Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sign Up Form -->
+        <div id="signUpForm">
+            <h2>Sign Up</h2>
+            <form id="signUp">
+                <label for="signUpEmail">Email:</label>
+                <input type="email" id="signUpEmail" required>
+
+                <label for="signUpPassword">Password:</label>
+                <input type="password" id="signUpPassword" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0)" onclick="showLogin()">Login</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="javascript:void(0)" onclick="showSignUp()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
